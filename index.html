@@ -1,0 +1,79 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  
+  <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <h1> Velkommen til prosjekt 1 i webutvikling </h1>
+    <div class="kunstner">
+      <h2> Kunstner: Springbert Sprøløk </h2>
+      <p><iframe src="springbert.txt" frameborder="0" height="auto" width="95%"></iframe></p>
+    </div>
+    <div class="kunst">
+      <div class="tittel">
+        <h3> Vi raver heeeele natta </h3>
+      </div>
+      <div class="bilde">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 600">
+          <desc>blue rectangle shape</desc>
+          <rect id="id1" width="100%" height="100%" fill="#216" onclick="onClickFunc()"></rect>
+          <rect id="id2" x="40%" y="58.33%" width="20%" height="41.67%" fill="#c00"></rect>
+          <polygon id="id3" points="500,250 350,350 650,350" style="fill:black;stroke:black;stroke-width:1" />
+          <rect id="id4" x="465" y="450" width="70px" height="70px" style="fill:blue" onclick="backToRave()"></rect>
+          <line id="id5" x1="500" y1="450" x2="500" y2="520" style="stroke:rgb(0, 0, 0);stroke-width:2"></line>
+          <line id="id6" x1="465" y1="485" x2="535" y2="485" style="stroke:rgb(0, 0, 0);stroke-width:2"></line>
+          <circle cx="150" cy="100" r="40" fill="yellow">
+            <animatemotion dur="69s" repeatCount="indefinite" path="M0,0, 700,0 z"></animatemotion>
+          </circle>
+        </svg>
+      </div>
+    </div>
+    <div class="kunst">
+      <div class="tittel">
+        <h4> Det firkantige røde </h4>
+      </div>
+      <div class="bilde">
+        <canvas id="canvas" width="1000px" height="600px" onclick="canvasClicked()">
+          <script>
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#216";
+            ctx.fillRect(0, 0, 999, 600);
+
+            ctx.fillStyle = "#c00";
+            ctx.fillRect(400, 350, 200, 250);
+            
+            ctx.beginPath();
+            ctx.moveTo(500,250);
+            ctx.lineTo(350,350);
+            ctx.lineTo(650,350);
+            ctx.fillStyle = "#000";
+            ctx.fill();
+
+            ctx.fillStyle = "blue";
+            ctx.fillRect(465, 450, 70, 70);
+
+            ctx.fillStyle = "#000";
+            ctx.fillRect(500, 450, 2, 70);
+            ctx.fillRect(465, 485, 70, 2);
+
+            
+            ctx.fillStyle = "yellow";
+            ctx.beginPath();
+            ctx.arc(150, 100, 40, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.closePath();
+            
+          </script>
+        </canvas>
+      </div>
+    </div>
+    <div class="buttonwrapper">
+      <button class="button" onclick="clickButton()"> Click me for documentation! </button>
+    </div>
+    <div class ="documentation">
+      <p><iframe src="dokumentasjon.txt" frameborder="0" height="auto" width="95%"></iframe></p>
+    </div>
+  </body>

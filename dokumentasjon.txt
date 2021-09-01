@@ -1,0 +1,53 @@
+1.	Har brukt grid mye. Jeg bruker grid for å dele opp div-objektene for å få tittelen sidestilt med bildene.
+Har brukt flexbox i elementet der jeg presenterer kunstneren. Jeg bruker flexbox for å prøve, og for å kunne
+sammenlikne grid og flexbox. Jeg bruker grid mye fordi det gir meg mer frihet i løpet av kodingen, da grid kan 
+sette inn elementer i både x og y retningen. Flexbox derimot er jeg nødt til å angi en retning, men ellers 
+fungerer den veldig likt til det formålet jeg har brukt. 
+
+2.	Både canvas og SVG hardkodet jeg inn i HTML fila for hånd. Jeg har plottet inn punkter for hånd, og fylt 
+de med farger fra HTML fila. Jeg har brukt CSS for å skalere både SVG og Canvas til å passe browservinduet,
+ellers ligger alle detaljene i HTML fila. For å få SVG bildet til å passe inn i browservinduet har jeg brukt 
+viewbox, som gjør mye av jobben for meg. I SVG objektet ligger det mange nye objekter med egne id-er, mens 
+canvas-objektet er det et objekt som tegnes på nytt i loop å se ut slik jeg ønsker med animasjoner.
+Canvas tegnes først med javascript-kode inni HTML fila, og deretter tegnes det rett fr javascript fila. For
+å få til interaktivitet har jeg brukt onclick-funksjoner javascript, og kodet inn endringene som følger. 
+Animeringene har jeg fått til i SVG ved å bruke animotion på sola/månen, og intervall som endrer fargen i 
+vinduet per 100 ms. Animasjonene i canvas har jeg fått til ved å tegne canvaset på nytt for hver iterasjon 
+i intervaller som kjører kontinuerlig. I SVG stopper jeg og starter samme intervallet for å skifte mellom
+dag og natt, mens i canvas så skifter jeg mellom to forskjellige intervaller for å simulere dag og natt. 
+Hovedforskjellen mellom canvas og SVG virker for meg å være som at canvas er et mer flytende objekt der
+hele canvaset er en tegning som man kan bygge videre, mens SVG er en samling objekter med egne identifikatorer 
+(om man ønsker egne identifikatorer).  
+
+3.	f
+
+4.	Jeg har utført crossbrowser testing ved å test at nettstedet ser likt ut i to forskjellige nettlesere. Jeg 
+har samtidig testet at animasjonene fungerer som de skal i begge nettleserne, og at alle funksjoner ivaretas når
+vinduet skaleres ned. Jeg har også sjekket at all interaktivitet gir forventet respons i begge nettleserne, også
+nedskalert.
+
+5. Kildene jeg har brukt:
+https://www.w3schools.com/tags/tag_button.asp
+
+https://stackoverflow.com/questions/11799159/trying-to-align-html-button-at-the-center-of-the-my-page
+
+https://www.w3schools.com/js/js_if_else.asp
+
+https://www.w3schools.com/graphics/svg_polygon.asp 
+
+https://www.w3schools.com/graphics/svg_line.asp 
+
+https://stackoverflow.com/questions/33139014/using-javascript-to-alternate-background-color-of-html-element
+
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes 
+
+https://www.w3schools.com/html/html5_canvas.asp
+
+https://www.w3schools.com/graphics/canvas_intro.asp
+
+https://stackoverflow.com/questions/27736288/how-to-fill-the-whole-canvas-with-specific-color
+
+https://stackoverflow.com/questions/8126466/how-do-i-reset-the-setinterval-timer 
+
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateMotion 
+

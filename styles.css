@@ -1,0 +1,70 @@
+h1 {
+    color: crimson;
+    margin: 0px;
+}
+.kunstner {
+    margin: 20px;
+}
+.kunst {
+    margin: 20px;
+}
+.buttonwrapper {
+    text-align: center;
+}
+
+@media screen {
+    .kunstner {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-color: darkcyan;
+        text-align: center;
+        justify-content: center;
+    }
+    .kunstner h2 {
+        font-style: italic;
+    }
+    .kunstner p {
+        font-style: oblique;
+    }
+    .kunst {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 20% 80%;
+    }
+    .tittel {
+        background-color: darkkhaki;
+    }
+    .buttonwrapper {
+        text-align: center;
+    }
+    .buttonwrapper button {
+        background-color: darkslateblue;
+        color: floralwhite;
+    }
+    .documentation {
+        display: grid;
+    }
+    .bilde {
+        background-color: gold;
+        height: auto;
+        width: auto;
+        align-content: center;
+    }
+    .bilde svg {
+        height: 100%;
+        width: 100%;
+    }
+    .kunst h4 {
+        font-size: x-large;
+        font-style: inherit;
+    }
+    .kunst h3 {
+        font-size: x-large;
+        font-style: italic;
+    }
+    .bilde canvas {
+        height: 100%;
+        width: 100%;
+    }
+}
